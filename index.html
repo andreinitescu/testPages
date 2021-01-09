@@ -1,0 +1,15 @@
+
+
+<script>
+    document.documentElement.innerHTML = createResult(sum(1, 2));
+    
+    function sum(a, b) {
+      return { 
+        sum : a + b;
+      }
+    }
+    
+    function createResult(data) {
+       return JSON.stringify(data);
+    }
+</script>
